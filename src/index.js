@@ -1,4 +1,5 @@
-const express = require('express');
+// const express = require('express');
+import express from 'express';
 
 const app = express();
 const PORT = 8000;
@@ -8,7 +9,7 @@ app.use(express.json());
 
 // Root GET route
 app.get('/', (req, res) => {
-  res.json({ message: 'Welcome to the Express server!' });
+  res.json({ message: 'Welcome to intern the Express server!' });
 });
 
 // Start server
