@@ -1,7 +1,8 @@
 import { Router } from 'express';
-import { matches } from '../db/schema';
-import { db } from '../db/db';
-import { getMatchStatus } from '../utils/match-status';
+import { matches } from '../db/schema.js';
+import { db } from '../db/db.js';
+import { getMatchStatus } from '../utils/match-status.js';
+import { createMatchSchema } from '../validation/matches.js';
 
 export const matchRouter = Router();
 
